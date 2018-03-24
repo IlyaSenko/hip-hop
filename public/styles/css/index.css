@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif; }
+  body header {
+    background-image: url("./img/1.jpg");
+    background-size: cover;
+    height: 100vh; }
+    body header #inside {
+      background-color: white;
+      width: 350px;
+      height: 150px;
+      position: absolute;
+      top: 250px;
+      left: 150px;
+      text-align: center;
+      font-family: 'Permanent Marker', cursive; }
+      body header #inside h2 {
+        font-size: 60px;
+        margin-top: 5px;
+        margin-bottom: 0; }
+      body header #inside p {
+        margin-top: 8px; }
+  body #intro {
+    background-size: cover;
+    height: 40vh;
+    position: relative; }
+    body #intro p {
+      margin: 100px 80px 10px;
+      position: relative; }
+    body #intro div {
+      margin: auto;
+      text-align: center;
+      width: 100px;
+      border: 2px solid;
+      padding: 5px;
+      position: relative;
+      left: 0;
+      right: 0;
+      top: 100px; }
+      body #intro div i {
+        width: 5px; }
+  body #genres #fright {
+    height: 65vh;
+    float: right;
+    background-size: cover; }
+  body #genres #fleft {
+    height: 65vh;
+    float: left;
+    background-size: cover; }
+  body #genres .genre {
+    background-size: cover;
+    height: 65vh; }
+  body #genres #freshmen #fright {
+    width: 60%;
+    background-image: url("./img/pump.jpg");
+    background-position: center center; }
+  body #genres #freshmen #fleft {
+    background-color: #E2F8EC;
+    width: 40%; }
+  body #genres #popular #fright {
+    width: 40%;
+    background-color: #FFF9D9; }
+  body #genres #popular #fleft {
+    width: 60%;
+    background-image: url("./img/kendrick.jpg");
+    background-position: center center; }
+  body #genres #legends #fright {
+    width: 60%;
+    background-image: url("./img/biggie.jpg");
+    background-position: center center; }
+  body #genres #legends #fleft {
+    background-color: #E6F9FF;
+    width: 40%; }
+  body #genres #under #fright {
+    width: 40%;
+    background-color: #0C1922; }
+  body #genres #under #fleft {
+    width: 60%;
+    background-image: url("./img/sb.jpg");
+    background-position: center center; }

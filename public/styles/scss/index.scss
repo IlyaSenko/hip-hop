@@ -1,0 +1,208 @@
+// @import '/node_modules/font-awesome/scss/font-awesome.scss';
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+
+  header {
+    background-image: url('./img/1.jpg');
+    background-size: cover;
+    height: 100vh;
+    min-width: 1200px;
+
+    #inside {
+      background-color: white;
+      width: 350px;
+      height: 150px;
+      position: absolute;
+      top: 250px;
+      left: 150px;
+      text-align: center;
+      font-family: 'Permanent Marker', cursive;
+
+      h2 {
+        font-size: 60px;
+        margin-top: 5px;
+        margin-bottom: 0;
+      }
+
+      p {
+        margin-top: 8px;
+      }
+    }
+  }
+
+  #intro {
+    background-size: cover;
+    height: 70vh;
+    // position: relative;
+    width: 1200px;
+    margin: auto;
+    max-height: 575px;
+
+    i {
+      padding-left: 7px;
+    }
+
+    p {
+      position: relative;
+      text-align: center;
+      top: 15%;
+      margin: auto;
+      font-weight: bold;
+      width: 950px;
+      font-size: 30px;
+    }
+
+    div {
+      margin: auto;
+      text-align: center;
+      width: 100px;
+      border: 2px solid;
+      padding: 10px;
+      position: relative;
+      left: 0;
+      right: 0;
+      top: 25%;
+      cursor: pointer;
+    }
+    div:hover {
+      background-color: #3B393C;
+      color: white;
+    }
+
+    i {
+      width: 5px;
+    }
+    }
+
+  #genres {
+    margin: auto;
+    width: 1200px;
+
+    i {
+      padding-left: 10px;
+    }
+
+    .btn{
+      position: relative;
+      top: 120px;
+      margin: auto;
+      width: 130px;
+      background-color: #3B393C;
+      text-align: center;
+      padding: 10px;
+      color: white;
+      cursor: pointer;
+    }
+
+
+
+    .btn:hover {
+      background-color: white;
+      border: 2px solid;
+      color:#3B393C;
+    }
+
+    #line {
+      border: 1px solid;
+      border-color: #EAFDFF;
+      width: 70px;
+      position: relative;
+      top: 40px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      top: 50px;
+      position: relative;
+      font-size: 45px;
+    }
+
+    .undline {
+      text-align: center;
+      position: relative;
+      top: 70px;
+      width: 70%;
+      margin: auto;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    #fright {
+      height: 65vh;
+      float: right;
+      background-size: cover;
+    }
+
+    #fleft {
+      height: 65vh;
+      float: left;
+      background-size: cover;
+    }
+
+    .genre {
+      height: 65vh;
+      margin-bottom: 50px;
+    }
+
+    #freshmen {
+
+      #fright {
+        width: 720px;
+        background-image: url('./img/pump.jpg');
+        background-position: center center;
+      }
+
+      #fleft {
+        background-color: #E2F8EC;
+        width: 480px;
+      }
+    }
+
+    #popular {
+
+      #fright {
+        width: 480px;
+        background-color: #FFF9D9;
+      }
+
+      #fleft {
+        width: 720px;
+        background-image: url('./img/kendrick.jpg');
+        background-position: center center;
+      }
+    }
+
+    #legends {
+
+      #fright {
+        width: 720px;
+        background-image: url('./img/biggie.jpg');
+        background-position: center center;
+      }
+
+      #fleft {
+        background-color: #E6F9FF;
+        width: 480px;
+      }
+    }
+
+    #under {
+
+      color: white;
+
+      #fright {
+        width: 480px;
+        background-color: #0C1922;
+      }
+
+      #fleft {
+        width: 720px;
+        background-image: url('./img/sb.jpg');
+        background-position: center center;
+      }
+    }
+  }
+  }
