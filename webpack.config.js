@@ -25,7 +25,10 @@ module.exports = {
   },
   entry: {
     bundle: path.resolve(__dirname, './public/js/app.js'),
-    freshmen: path.resolve(__dirname, './public/js/freshmen.js')
+    freshmen: path.resolve(__dirname, './public/js/freshmen.js'),
+    popular: path.resolve(__dirname, './public/js/popular.js'),
+    legends: path.resolve(__dirname, './public/js/legends.js'),
+    underground: path.resolve(__dirname, './public/js/underground.js')
   },
   output: {
     filename: '[name].js',

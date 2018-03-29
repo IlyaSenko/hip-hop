@@ -1,0 +1,421 @@
+body {
+  text-align: center;
+
+  audio {
+    overflow: hidden;
+  }
+
+  header {
+
+    @keyframes slideDown {
+    from {height: 0px;}
+    to {height: 400px;}
+    }
+
+    @keyframes opacity {
+      0%   {opacity: 0;}
+      25%  {opacity: 0;}
+      75%  {opacity: 0;}
+      100% {opacity: 1;}
+    }
+
+    section {
+      text-align: left;
+      font-family: 'Open Sans', sans-serif;
+      width: 300px;
+      display: inline-block;
+
+      #pac {
+
+        #cover {
+          background-color: rgba(234, 255, 50, 0.4);
+
+          .btn {
+            background: url('./btns/orange.png');
+            background-size: cover;
+          }
+
+          .btnps {
+            background: url('./btns/orangeps.png');
+            background-size: cover;
+          }
+        }
+
+        .top {
+            background: url('./leimg/tupac.jpg');
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .bottom  {
+          background-color: rgb(234, 255, 50);
+        }
+      }
+
+      #Eminem {
+
+        #cover {
+          background-color: rgba(77, 42, 142, 0.4);
+
+          .btn {
+            background: url('./btns/red.png');
+            background-size: cover;
+          }
+
+          .btnps {
+            background: url('./btns/redps.png');
+            background-size: cover;
+          }
+        }
+
+        .top {
+            background: url('./leimg/eminem.jpg');
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .bottom  {
+          background-color: #4d2a8e;
+        }
+      }
+
+      #Cypress {
+
+        #cover {
+          background-color: rgba(255, 20, 52, 0.4);
+
+          .btn {
+            background: url('./btns/lightblue.png');
+            background-size: cover;
+          }
+
+          .btnps {
+            background: url('./btns/lightblueps.png');
+            background-size: cover;
+          }
+        }
+
+        .top {
+            background: url('./leimg/cypress.jpg');
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .bottom  {
+          background-color: rgb(255, 20, 52);
+        }
+      }
+
+      #Cent {
+
+        #cover {
+          background-color: rgba(10, 6, 7, 0.4);
+
+          .btn {
+            background: url('./btns/white.png');
+            background-size: cover;
+          }
+
+          .btnps {
+            background: url('./btns/whiteps.png');
+            background-size: cover;
+          }
+        }
+
+        .top {
+            background: url('./leimg/cent.jpg');
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .bottom  {
+          background-color: rgb(10, 6, 7);
+        }
+      }
+
+      #DMX {
+
+        #cover {
+          background-color: rgba(0, 226, 22, 0.4);
+
+          .btn {
+            background: url('./btns/purpple.png');
+            background-size: cover;
+          }
+
+          .btnps {
+            background: url('./btns/purppleps.png');
+            background-size: cover;
+          }
+        }
+
+        .top {
+            background: url('./leimg/dmx.jpg');
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .bottom  {
+          background-color: rgb(0, 226, 22);
+        }
+      }
+
+      #Snoop {
+
+        #cover {
+          background-color: rgba(255, 152, 17, 0.4);
+
+          .btn {
+            background: url('./btns/green.png');
+            background-size: cover;
+          }
+
+          .btnps {
+            background: url('./btns/greenps.png');
+            background-size: cover;
+          }
+        }
+
+        .top {
+            background: url('./leimg/snoop.jpg');
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .bottom  {
+          background-color: rgb(255, 152, 17);
+        }
+      }
+
+      #Tang {
+
+        #cover {
+          background-color: rgba(226, 200, 165, 0.4);
+
+          .btn {
+            background: url('./btns/black.png');
+            background-size: cover;
+          }
+
+          .btnps {
+            background: url('./btns/blackps.png');
+            background-size: cover;
+          }
+        }
+
+        .top {
+            background: url('./leimg/wutang.jpg');
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .bottom  {
+          background-color: rgb(226, 200, 165);
+        }
+      }
+
+      #Dre {
+
+        #cover {
+          background-color: rgba(22, 111, 255, 0.4);
+
+          .btn {
+            background: url('./btns/pink.png');
+            background-size: cover;
+          }
+
+          .btnps {
+            background: url('./btns/pinkps.png');
+            background-size: cover;
+          }
+        }
+
+        .top {
+            background: url('./leimg/dre.jpg');
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .bottom  {
+          background-color: rgb(22, 111, 255);
+        }
+      }
+
+      #Notorius {
+
+        #cover {
+          background-color: rgba(22, 255, 216, 0.4);
+
+          .btn {
+            background: url('./btns/blue.png');
+            background-size: cover;
+          }
+
+          .btnps {
+            background: url('./btns/blueps.png');
+            background-size: cover;
+          }
+        }
+
+        .top {
+            background: url('./leimg/biggie.jpg');
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .bottom  {
+          background-color: rgb(22, 255, 216);
+        }
+      }
+
+      #Jay {
+
+        #cover {
+          background-color: rgba(77, 42, 142, 0.4);
+
+          .btn {
+            background: url('./btns/red.png');
+            background-size: cover;
+          }
+
+          .btnps {
+            background: url('./btns/redps.png');
+            background-size: cover;
+          }
+        }
+
+        .top {
+            background: url('./leimg/jay.jpg');
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .bottom  {
+          background-color: #4d2a8e;
+        }
+      }
+
+      .block:hover {
+
+      }
+
+      .block {
+        width: 300px;
+        height: 400px;
+        margin-bottom: 50px;
+        animation: slideDown 3s;
+
+        #cover {
+          position: absolute;
+          width: inherit;
+          height: inherit;
+
+
+          .btn {
+            transition: all 0.3s linear;
+            position: relative;
+            width: 80px;
+            height: 80px;
+            margin: auto;
+            top: 140px;
+            cursor: pointer;
+            animation: opacity 4s;
+          }
+
+          .btn:hover {
+            transform: scale(1.2);
+          }
+
+          .btnps {
+            transition: all 0.3s linear;
+            position: relative;
+            width: 80px;
+            height: 80px;
+            margin: auto;
+            top: 140px;
+            cursor: pointer;
+            animation: opacity 4s;
+          }
+
+          .btnps:hover {
+            transform: scale(1.2);
+          }
+
+        }
+
+        .top {
+          width: 300px;
+          height: 85%;
+          border-radius: 3px 3px 0 0;
+
+          p {
+            margin: 0;
+            position: relative;
+            top: 285px;
+            left: 30px;
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+            animation: opacity 4s;
+          }
+        }
+
+        .bottom {
+          width: 300px;
+          height: 15%;
+          border-radius: 0 0 3px 3px;
+
+          p {
+            margin: 0;
+            color: white;
+            position: relative;
+            top: 14px;
+            left: 30px;
+            font-size: 22px;
+            animation: opacity 4s;
+          }
+        }
+      }
+    }
+
+    #sec2 {
+      margin: 30px 50px 0;
+      position: relative;
+      top: 70px;
+    }
+
+    #sec1, #sec3 {
+      margin: 30px 50px 0;
+      position: relative;
+      top: -300px;
+    }
+
+
+    @media only screen and (max-width: 1223px) {
+      #sec2 {
+        top: 149px;
+      }
+
+      #sec3 {
+        top: -331px;
+        left: -200px;
+      }
+    }
+
+    @media only screen and (max-width: 819px) {
+
+      #sec1 {
+        top:0;
+      }
+
+      #sec2 {
+        top:-27px;
+      }
+
+      #sec3 {
+        top: -57px;
+        left: 0;
+      }
+    }
+  }
+}

@@ -16,13 +16,17 @@ app.listen(port, function()  {
   console.log(`Server is running on the localhost:${port} `);
 });
 
-app.get('/', function(req, res) {
+
+  app.get('/', function(req, res) {
   res.sendFile(path.resolve(__dirname , '../public/tpl/index.html'))
 });
 
-app.get('/freshmen', function(req, res) {
-  res.sendFile(path.resolve(__dirname , '../public/tpl/freshmen.html'))
-})
+var schools = ['freshmen','popular','legends','underground']
+
+for(var i = 0;i < schools.length; i++){
+app.get(`/${schools[i]}`, function(req, res) {
+  res.sendFile(path.resolve(__dirname , `../public/tpl/${req.url}.html`))
+});}
 
 app.use('/css', express.static(path.resolve(__dirname, '../public/styles/css')))
 app.use('/dist',  express.static(path.resolve(__dirname, '../dist')))

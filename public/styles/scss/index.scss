@@ -4,11 +4,61 @@ body {
   margin: 0;
   font-family: 'Lato', sans-serif;
 
+  @keyframes headerDown {
+    from {top: -100vh;}
+    to {top: 0vh;}
+  }
+
+  @keyframes inside {
+    0% {left: 0; opacity: 0}
+    25% {left: 0; opacity: 0}
+    50% {left: 0; opacity: 0}
+    100% {left: 150px; opacity: 1}
+  }
+
+  @keyframes fleft1 {
+    from {width: 0; left: 480px;}
+    to {width: 480px; left: 0;}
+  }
+
+  @keyframes fright1 {
+    from {width: 0; right: 720px;}
+    to {width: 720px; right: 0;}
+  }
+
+  @keyframes opacity {
+    0% {opacity: 0}
+    50% {opacity: 0}
+    100% {opacity: 1}
+  }
+
+  @keyframes fleft2 {
+    from {width: 0; left: 720px;}
+    to {width: 720px; left: 0;}
+  }
+
+  @keyframes fright2 {
+    from {width: 0; right: 480px;}
+    to {width: 480px; right: 0;}
+  }
+
+  @keyframes btn {
+    from {opacity: 0; top: 27%;}
+    to {opacity: 1; top: 25%;}
+  }
+
+  @keyframes p {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
   header {
     background-image: url('./img/1.jpg');
     background-size: cover;
     height: 100vh;
     min-width: 1200px;
+    position: relative;
+    animation: headerDown 2s ease-out;
 
     #inside {
       background-color: white;
@@ -19,6 +69,7 @@ body {
       left: 150px;
       text-align: center;
       font-family: 'Permanent Marker', cursive;
+      animation: inside 4s ease-out;
 
       h2 {
         font-size: 60px;
@@ -44,7 +95,7 @@ body {
       padding-left: 7px;
     }
 
-    p {
+    .pan {
       position: relative;
       text-align: center;
       top: 15%;
@@ -52,9 +103,10 @@ body {
       font-weight: bold;
       width: 950px;
       font-size: 30px;
+      animation: p 1s ease-out;
     }
 
-    div {
+    .btnup {
       margin: auto;
       text-align: center;
       width: 100px;
@@ -65,6 +117,7 @@ body {
       right: 0;
       top: 25%;
       cursor: pointer;
+      animation: btn 1s ease-out;
     }
     div:hover {
       background-color: #3B393C;
@@ -134,12 +187,14 @@ body {
       height: 65vh;
       float: right;
       background-size: cover;
+      position: relative;
     }
 
     #fleft {
       height: 65vh;
       float: left;
       background-size: cover;
+      position: relative;
     }
 
     .genre {
@@ -147,61 +202,119 @@ body {
       margin-bottom: 50px;
     }
 
-    #freshmen {
+    .franim {
 
       #fright {
         width: 720px;
+        animation: fright1 1.5s ease-out;
         background-image: url('./img/pump.jpg');
         background-position: center center;
       }
 
       #fleft {
-        background-color: #E2F8EC;
+        animation: fleft1 1.5s ease-out;
         width: 480px;
+        background-color: #E2F8EC;
+
+        div, h1, p {
+          animation: opacity 3s ease-out;
+        }
       }
     }
 
-    #popular {
+
+
+    .poanim {
 
       #fright {
         width: 480px;
         background-color: #FFF9D9;
+        animation: fright2 1.5s ease-out;
       }
 
       #fleft {
         width: 720px;
         background-image: url('./img/kendrick.jpg');
         background-position: center center;
+        animation: fleft2 1.5s ease-out;
+      }
+
+      div, h1, p {
+        animation: opacity 3s ease-out;
       }
     }
 
-    #legends {
+    .leanim {
 
       #fright {
         width: 720px;
         background-image: url('./img/biggie.jpg');
         background-position: center center;
+        animation: fright1 1.5s ease-out;
       }
 
       #fleft {
         background-color: #E6F9FF;
         width: 480px;
+        animation: fleft1 1.5s ease-out;
+
+        h1 {
+          top: 0%;
+        }
+
+        #line {
+          top: -2%;
+        }
+
+        p {
+          top: 20px;
+        }
+
+        #btn3 {
+          top: 10%;
+        }
+      }
+
+      div, h1, p {
+        animation: opacity 3s ease-out;
       }
     }
 
-    #under {
+    .unanim {
 
       color: white;
 
       #fright {
         width: 480px;
         background-color: #0C1922;
+        animation: fright2 1.5s ease-out;
+
+        h1 {
+          top: -5%;
+        }
+
+        #line {
+          top: -8%;
+        }
+
+        p {
+          top: -10px;
+        }
+
+        #btn4 {
+          top: 3%;
+        }
       }
 
       #fleft {
         width: 720px;
         background-image: url('./img/sb.jpg');
         background-position: center center;
+        animation: fleft2 1.5s ease-out;
+      }
+
+      div, h1, p {
+        animation: opacity 3s ease-out;
       }
     }
   }

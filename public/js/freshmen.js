@@ -19,13 +19,21 @@ for(let btn of document.getElementsByClassName('btn')) {;
           if(isPlaying === true){
             aud.pause();
             isPlaying = false;
+            btn.classList.add('btn')
+            btn.classList.remove('btnps')
           } else {
             aud.play();
             isPlaying = true;
+            btn.classList.remove('btn')
+            btn.classList.add('btnps')
           }
         } else {
-          isPlaying = true;
           aud.remove();
+          if(isPlaying === true) {
+            var pause = document.getElementsByClassName('btnps')[0];
+            pause.classList.add('btn');
+            pause.classList.remove('btnps');
+          }
           onclick();
         }
       } else {
@@ -38,11 +46,14 @@ for(let btn of document.getElementsByClassName('btn')) {;
        // var top = cover.nextSibling;
       var song = btn.getAttribute('id');
       audio.setAttribute('id', song);
-      source.setAttribute('src', `/music/${song}.mp3`);
+      source.setAttribute('src', `/music/fr/${song}.mp3`);
       source.setAttribute('type', 'audio/mpeg');
       audio.appendChild(source);
       document.body.appendChild(audio);
       console.log(6);
+      btn.classList.remove('btn')
+      btn.classList.add('btnps')
+      isPlaying = true;
       }
     }
     )
